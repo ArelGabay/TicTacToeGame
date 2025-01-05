@@ -3,7 +3,7 @@ package com.example.tictactoegame.model
 data class Game(
     val board: Array<Array<String>> = Array(3) { Array(3) { "" } },
     var currentPlayer: String = "X",
-    var winner: String? = null
+    var winner: String? = null,
     var isGameOver: Boolean = false
 ) {
     fun makeMove(row: Int, col: Int): Boolean { // return true if the move is valid
